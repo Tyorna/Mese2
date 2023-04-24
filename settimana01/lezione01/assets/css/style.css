@@ -264,6 +264,7 @@ footer a {
         line-height: 2;
         margin: auto;
         box-sizing: content-box;
+        position: static;
     }
 
     header {
@@ -290,7 +291,7 @@ footer a {
     }
 
     nav {
-        right: 120px;
+        left: 80vw;
     }
 
     table {
