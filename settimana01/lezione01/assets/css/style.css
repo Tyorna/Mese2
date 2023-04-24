@@ -297,19 +297,17 @@ footer a {
         width: 70%;
     }
 
-    iframe,
-    iframe ~ section {
+    iframe, section {
         display: inline-block;
         width: 46%;
-        margin: auto;
+        margin-inline: 10px;
+        vertical-align: middle;
         height: 200px;
-        margin-bottom: 0;
     }
 
     aside>div {
         display: inline-block;
         width: 33%;
-        margin: auto;
     }
 
     address{
@@ -342,6 +340,6 @@ footer a {
 
        address:after{
         content:\a;
-        
+
        }
 }
