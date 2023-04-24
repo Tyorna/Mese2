@@ -339,8 +339,8 @@ footer a {
         display: none;
        }
 
-       address:after{
+       #nuovo::before{
         content:\a;
-
+        white-space: pre;
        }
 }
