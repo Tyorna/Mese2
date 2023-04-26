@@ -1,0 +1,147 @@
+body {
+    color: #732104;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#logo {
+    width: 20%;
+    padding-right: 10px;
+}
+
+img {
+    overflow: hidden;
+}
+
+.bg-yellow {
+    background-color: #FFDF7F;
+}
+
+.bg-pink {
+    background-color: #FEF7E2;
+}
+
+.b-r {
+    border-radius: 20px;
+}
+
+.b-r20 {
+    border-radius: 30px;
+}
+
+ul {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0;
+    padding: 30px 10px;
+}
+
+li {
+    margin: 4px;
+    list-style: none;
+    font-weight: bold;
+    flex: 1 0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.big {
+    flex: 1.5 0;
+}
+
+h1{
+    font-weight: 900;
+}
+
+article{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.container{
+  margin: 0;
+  width: 45%;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card-cont{
+    border-radius: 20px;
+    overflow: hidden;
+}
+.card-img{
+    width: 100%;
+}
+
+div h2{
+    margin: 0;
+}
+
+.p-flex{
+   display: flex;
+   flex-direction: column;
+   font-size: 0.8rem;
+   align-items: center;
+}
+
+div h2, div a{
+  margin-bottom: 0;
+}
+
+div a{
+    width: 70%;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 1rem;
+    margin: 5px;
+    text-decoration: none;
+    padding: 5px;
+}
+
+span{
+    margin: 0;
+}
+
+div p {
+    margin-bottom: 5px;
+}
+
+h2{
+    font-weight: bold;
+    margin: 0;
+}
+
+
+aside{
+    margin: 20px;
+}
+
+.article{
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+}
+aside h2{
+    margin-bottom: 10px;
+}
+
+article img{
+    width: 100%;
+}
+
+h3{
+    font-weight: bold;
+}
+
+@media screen and (max-width: 460px){
+    .container{
+        width: 230px;}
+}
