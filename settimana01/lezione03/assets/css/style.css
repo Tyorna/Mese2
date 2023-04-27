@@ -12,15 +12,42 @@ body{
     position: absolute;
     top: 30vh;
     height: 400px;
+    overflow: hidden;
 }
 
 @keyframes load{
     0% {
-      transform: translateX(-100%);
+      transform: translate(100%, -100%);
     }
     100% {
       transform: translateX(0);
     }
+  }
+  @keyframes load2{
+    0% {
+      transform: translate(100%, 100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes diversi {
+    0% {
+        transform: translate(-100%, 100%);
+      }
+      100% {
+        transform: translateX(0);
+      }
+  }
+
+  @keyframes diversi2 {
+    0% {
+        transform: translate(-100%, -100%);
+      }
+      100% {
+        transform: translateX(0);
+      }
   }
 
 .animated{
@@ -32,8 +59,18 @@ body{
     justify-content: center;
     padding: 20px;
     margin: 0;
-    animation: load 4s 1 4s 1; 
+    /*animation: load 2s; 
+    animation-delay: 500ms;*/
 }
+
+#note1{animation: diversi 2s;}
+#note2{animation: load 2s;}
+#note3{animation: diversi2 2s;}
+#note4{animation: load2 2s;}
+#note5{animation: diversi 2s;}
+#note6{animation: load 2s;}
+#note7{animation: diversi2 2s;}
+#note8{animation: load2 2s;}
 
 .bg-pink{
     background: linear-gradient( rgba(226, 226, 163,1) 80%, rgba(106, 104, 104, 0.8));
@@ -55,7 +92,7 @@ h2{
     width: 17%;
     height: 150px;
     box-shadow: 2px 2px 1px black;
-    transition: all 1s linear;
+    transition: all 500ms linear;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -73,7 +110,7 @@ h2{
 }
 
 .note:hover{
-    transform: scale(1.1) rotate(0);
+    transform: scale(1.2) rotate(0);
     z-index: 1;
 }
 
