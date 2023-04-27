@@ -63,21 +63,21 @@ body{
     animation-delay: 500ms;*/
 }
 
-#note1{animation: diversi 2s;
+#note1{animation: diversi 2s backwards;
 animation-delay: 0.5s;}
-#note2{animation: load 2s;
+#note2{animation: load 2s backwards;
     animation-delay: 0s}
-#note3{animation: diversi2 2s;
+#note3{animation: diversi2 2s backwards;
     animation-delay: 1s}
-#note4{animation: load2 2s;
+#note4{animation: load2 2s backwards;
     animation-delay: 0.5s;}
-#note5{animation: diversi 2s;
+#note5{animation: diversi 2s backwards;
     animation-delay: 0s}
-#note6{animation: load 2s;
+#note6{animation: load 2s backwards;
     animation-delay: 1s}
-#note7{animation: diversi2 2s;
+#note7{animation: diversi2 2s backwards;
     animation-delay: 1s}
-#note8{animation: load2 2s;
+#note8{animation: load2 2s backwards;
     animation-delay: 0s}
 
 .bg-pink{
