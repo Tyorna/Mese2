@@ -17,36 +17,36 @@ body{
 
 @keyframes load{
     0% {
-      transform: translate(100%, -100%);
+      transform: translate(100%, -100%) scale(4);
     }
     100% {
-      transform: translateX(0);
+      transform: translateX(0) scale(1);
     }
   }
   @keyframes load2{
     0% {
-      transform: translate(100%, 100%);
+      transform: translate(100%, 100%) scale(4);
     }
     100% {
-      transform: translateX(0);
+      transform: translateX(0) scale(1);
     }
   }
 
   @keyframes diversi {
     0% {
-        transform: translate(-100%, 100%);
+        transform: translate(-100%, 100%) scale(4);
       }
       100% {
-        transform: translateX(0);
+        transform: translateX(0) scale(1);
       }
   }
 
   @keyframes diversi2 {
     0% {
-        transform: translate(-100%, -100%);
+        transform: translate(-100%, -100%) scale(4);
       }
       100% {
-        transform: translateX(0);
+        transform: translateX(0) scale(1);
       }
   }
 
