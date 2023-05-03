@@ -16,7 +16,7 @@
     <header class="sticky-top">
         <nav class="navbar navbar-expand-lg bg-body-tertiary mb-5">
             <div class="container-fluid mx-5">
-                <img src="assets/img/images.png" class="w-25">
+                <img src="assets/img/images.png" class="w-25 img-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -68,47 +68,55 @@
             </div>
             <div class="container row" id="container1">
                 <div class="col-6 col-md-4 col-lg-3 g-3">
-                    <div class="card border border-info">
-                        <div class="card-body">
-                            <img src="assets/img/gettyimages-1302343043-612x612.jpg" class='w-100 p-0 m-0'>
+                    <div class="card border border-info rounded">
+                        <div class="card-body p-0">
+                            <img src="assets/img/gettyimages-1302343043-612x612.jpg" class='w-100 p-0 m-0 rounded'>
+                            <div class="p-3">
+                                <h5 class="card-title">Roma</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi necessitatibus, sequi
+                                    sapiente harum quae molestiae consequuntur aut possimus illum?</p>
+                                <button class='btn btn-info'> Prenota </button>
+                            </div>
                         </div>
-                        <h5 class="card-title">Roma</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi necessitatibus, sequi
-                            sapiente harum quae molestiae consequuntur aut possimus illum?</p>
-                        <button class='btn btn-info'> Prenota </button>
                     </div>
                 </div>
-                <div class="col-6 g-3 col-lg-3 d-md-none d-lg-block">
-                    <div class="card border border-info">
-                        <div class="card-body">
-                            <img src="assets/img/gettyimages-1302343043-612x612.jpg" class='w-100'>
+                <div class="col-6 col-md-4 col-lg-3 g-3 d-md-none d-lg-block">
+                    <div class="card border border-info rounded">
+                        <div class="card-body p-0">
+                            <img src="assets/img/gettyimages-1302343043-612x612.jpg" class='w-100 p-0 m-0 rounded'>
+                            <div class="p-3">
+                                <h5 class="card-title">Londra</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi necessitatibus, sequi
+                                    sapiente harum quae molestiae consequuntur aut possimus illum?</p>
+                                <button class='btn btn-info'> Prenota </button>
+                            </div>
                         </div>
-                        <h5 class="card-title">Londra</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi necessitatibus, sequi
-                            sapiente harum quae molestiae consequuntur aut possimus illum?</p>
-                        <button class='btn btn-info'> Prenota </button>
                     </div>
                 </div>
-                <div class="col-6 col-md-4 g-3 col-lg-3">
-                    <div class="card border border-info">
-                        <div class="card-body">
-                            <img src="assets/img/gettyimages-1302343043-612x612.jpg" class='w-100'>
+                <div class="col-6 col-md-4 col-lg-3 g-3">
+                    <div class="card border border-info rounded">
+                        <div class="card-body p-0">
+                            <img src="assets/img/gettyimages-1302343043-612x612.jpg" class='w-100 p-0 m-0 rounded'>
+                            <div class="p-3">
+                                <h5 class="card-title">Barcellona</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi necessitatibus, sequi
+                                    sapiente harum quae molestiae consequuntur aut possimus illum?</p>
+                                <button class='btn btn-info'> Prenota </button>
+                            </div>
                         </div>
-                        <h5 class="card-title">Barcellona</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi necessitatibus, sequi
-                            sapiente harum quae molestiae consequuntur aut possimus illum?</p>
-                        <button class='btn btn-info'> Prenota </button>
                     </div>
                 </div>
-                <div class="col-6 col-md-4 g-3 col-lg-3">
-                    <div class="card border border-info">
-                        <div class="card-body">
-                            <img src="assets/img/gettyimages-1302343043-612x612.jpg" class='w-100'>
+                <div class="col-6 col-md-4 col-lg-3 g-3">
+                    <div class="card border border-info rounded">
+                        <div class="card-body p-0">
+                            <img src="assets/img/gettyimages-1302343043-612x612.jpg" class='w-100 p-0 m-0 rounded'>
+                            <div class="p-3">
+                                <h5 class="card-title">New York</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi necessitatibus, sequi
+                                    sapiente harum quae molestiae consequuntur aut possimus illum?</p>
+                                <button class='btn btn-info'> Prenota </button>
+                            </div>
                         </div>
-                        <h5 class="card-title">New York</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi necessitatibus, sequi
-                            sapiente harum quae molestiae consequuntur aut possimus illum?</p>
-                        <button class='btn btn-info'> Prenota </button>
                     </div>
                 </div>
             </div>
@@ -116,79 +124,97 @@
 
         <section class="mb-5 mx-5">
             <div class="d-flex justify-content-between mb-5">
-                <h2 id="welcome">Welcome Summer </h2><span class="text-info">Nascondi sezione</span>
+                <h2 id="welcome">Welcome Summer</h2><a href="#container2" class="text-info text-decoration-none"
+                    role="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="container2">Nascondi
+                    sezione</a>
             </div>
-            <div class="container row d-flex justify-content-between">
+            <div class="container row d-flex justify-content-between " id="container2">
                 <div class="col-6 col-lg-4 col-xl-2">
                     <div class="card shadow">
-                        <div class="card-body position-relative">
+                        <div class="card-body position-relative p-0">
                             <img src="assets/img/gettyimages-1302343043-612x612.jpg" class='w-100'>
-                            <span class="badge text-bg-danger position-absolute top-5 end-0">Hot</span>
-                            <h5 class="card-title">Roma</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi necessitatibus, sequi
-                                sapiente harum quae molestiae consequuntur aut possimus illum?</p>
-                            <button class='btn btn-info'> Prenota </button>
+                            <span class="badge text-bg-danger position-absolute top-10 end-0">Hot</span>
+                            <div class="p-3">
+                                <h5 class="card-title">Roma</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi necessitatibus, sequi
+                                    sapiente harum quae molestiae consequuntur aut possimus illum?</p>
+                                <button class='btn btn-info'> Prenota </button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-6 col-lg-4 col-xl-2">
                     <div class="card shadow">
-                        <div class="card-body position-relative">
+                        <div class="card-body position-relative p-0">
                             <img src="assets/img/gettyimages-1302343043-612x612.jpg" class='w-100'>
-                            <span class="badge text-bg-danger position-absolute top-5 end-0">Hot</span>
-                            <h5 class="card-title">Londra</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi necessitatibus, sequi
-                                sapiente harum quae molestiae consequuntur aut possimus illum?</p>
-                            <button class='btn btn-info'> Prenota </button>
+                            <span class="badge text-bg-danger position-absolute top-10 end-0">Hot</span>
+                            <div class="p-3">
+                                <h5 class="card-title">Londra</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi necessitatibus,
+                                    sequi
+                                    sapiente harum quae molestiae consequuntur aut possimus illum?</p>
+                                <button class='btn btn-info'> Prenota </button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-6 col-lg-4 col-xl-2">
                     <div class="card shadow">
-                        <div class="card-body position-relative">
+                        <div class="card-body position-relative p-0">
                             <img src="assets/img/gettyimages-1302343043-612x612.jpg" class='w-100'>
-                            <span class="badge text-bg-danger position-absolute top-5 end-0">Hot</span>
-                            <h5 class="card-title">Barcellona</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi necessitatibus, sequi
-                                sapiente harum quae molestiae consequuntur aut possimus illum?</p>
-                            <button class='btn btn-info'> Prenota </button>
+                            <span class="badge text-bg-danger position-absolute top-10 end-0">Hot</span>
+                            <div class="p-3">
+                                <h5 class="card-title">Barcellona</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi necessitatibus,
+                                    sequi
+                                    sapiente harum quae molestiae consequuntur aut possimus illum?</p>
+                                <button class='btn btn-info'> Prenota </button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-6 col-lg-4 col-xl-2">
                     <div class="card shadow">
-                        <div class="card-body position-relative">
+                        <div class="card-body position-relative p-0">
                             <img src="assets/img/gettyimages-1302343043-612x612.jpg" class='w-100'>
-                            <span class="badge text-bg-danger position-absolute top-5 end-0">Hot</span>
-                            <h5 class="card-title">New York</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi necessitatibus, sequi
-                                sapiente harum quae molestiae consequuntur aut possimus illum?</p>
-                            <button class='btn btn-info'> Prenota </button>
+                            <span class="badge text-bg-danger position-absolute top-10 end-0">Hot</span>
+                            <div class="p-3">
+                                <h5 class="card-title">New York</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi necessitatibus,
+                                    sequi
+                                    sapiente harum quae molestiae consequuntur aut possimus illum?</p>
+                                <button class='btn btn-info'> Prenota </button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-6 col-lg-4 col-xl-2">
                     <div class="card shadow">
-                        <div class="card-body position-relative">
+                        <div class="card-body position-relative p-0">
                             <img src="assets/img/gettyimages-1302343043-612x612.jpg" class='w-100'>
-                            <span class="badge text-bg-danger position-absolute top-5 end-0">Hot</span>
-                            <h5 class="card-title">Citta del Capo</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi necessitatibus, sequi
-                                sapiente harum quae molestiae consequuntur aut possimus illum?</p>
-                            <button class='btn btn-info'> Prenota </button>
+                            <span class="badge text-bg-danger position-absolute top-10 end-0">Hot</span>
+                            <div class="p-3">
+                                <h5 class="card-title">Città del capo</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi necessitatibus,
+                                    sequi
+                                    sapiente harum quae molestiae consequuntur aut possimus illum?</p>
+                                <button class='btn btn-info'> Prenota </button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-6 col-lg-4 col-xl-2">
                     <div class="card shadow">
-                        <div class="card-body position-relative">
+                        <div class="card-body position-relative p-0">
                             <img src="assets/img/gettyimages-1302343043-612x612.jpg" class='w-100'>
-
-                            <span class="badge text-bg-danger position-absolute top-5 end-0">Hot</span>
-                            <h5 class="card-title">Sidney</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi necessitatibus, sequi
-                                sapiente harum quae molestiae consequuntur aut possimus illum?</p>
-                            <button class='btn btn-info'> Prenota </button>
+                            <span class="badge text-bg-danger position-absolute top-10 end-0">Hot</span>
+                            <div class="p-3">
+                                <h5 class="card-title">Sidney</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi necessitatibus,
+                                    sequi
+                                    sapiente harum quae molestiae consequuntur aut possimus illum?</p>
+                                <button class='btn btn-info'> Prenota </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -274,26 +300,27 @@
         </section>
     </main>
     <footer class="bg-dark m-0 p-3">
-        <button type="button" class="btn btn-outline-secondary text-center mb-1" data-bs-toggle="modal" data-bs-target="#modal">Contattaci</button>
+        <button type="button" class="btn btn-outline-secondary text-center mb-1" data-bs-toggle="modal"
+            data-bs-target="#modal">Contattaci</button>
         <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
             <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">Contattaci</h1>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Contattaci</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <input type="email" placeholder="email" class="mb-1 w-100"><br>
+                        <input type="text" placeholder="Scrivici un messaggio!" class="w-100">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annulla</button>
+                        <button type="button" class="btn btn-primary">Invia</button>
+                    </div>
                 </div>
-                <div class="modal-body">
-                  <input type="email" placeholder="email" class="mb-1 w-100"><br>
-                  <input type="text" placeholder="Scrivici un messaggio!" class="w-100">
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annulla</button>
-                  <button type="button" class="btn btn-primary">Invia</button>
-                </div>
-              </div>
             </div>
-          </div>
-          
+        </div>
+
         <address class="text-white text-center fs-76"><code class="text-white">&copy;</code>2021 Kalina Travel LTD. All
             Rights Reserved</address>
 
