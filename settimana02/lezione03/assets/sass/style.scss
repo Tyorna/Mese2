@@ -1,0 +1,17 @@
+@import "./partials/header";
+@import "./partials/heroSection";
+@import "./partials/carouselSection";
+
+
+body, html{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  background-color: white;
+}
+
+main{
+  display: flex;
+  justify-content: center;
+}

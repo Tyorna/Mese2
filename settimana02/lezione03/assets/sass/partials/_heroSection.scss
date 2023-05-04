@@ -1,0 +1,158 @@
+
+  section.hero {
+  max-width: 60%;
+  margin-bottom: 20px;
+  margin-top: 200px;
+
+  .hero-Title{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+    
+       h1{
+         font-size: 3rem;
+         text-transform: uppercase;
+         animation: testo 3s backwards 2s;
+    }
+
+    h2{
+        font-size: 2rem;
+        text-transform: uppercase;
+        animation: testo 3s backwards 3s;
+    }
+  }
+
+    .hero-Preview {
+      display: flex;
+
+      .hero-PreviewImage {
+         width: 60%;
+
+         .hero-img {
+            width: 100%;
+             object-fit: contain; //ti fa stare l'immagine nel contenitore senza strecciare la rende responsive. Sempre da usare con width al 100%
+             animation: foto 3s backwards;
+           }
+        }
+
+              }
+      .hero-PreviewBtn {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       border-right: 1px solid blue;
+       width: 40%;
+       z-index: 1;
+       animation: bordo 4s backwards 2s;
+
+          button {
+             background-color: rgb(35, 18, 219);
+             padding: 1rem 1rem;
+             margin: 1rem;
+             color: white;
+             border-radius: 10px;
+             transition: all 0.5s linear 0.1s;
+             z-index:1;
+
+              &:hover {
+              background-color: aqua;
+              transform: scale(1.2);
+              color: black;
+              z-index: 1;
+               }
+            }
+        }
+    }
+
+
+    .hero-text{
+        animation: testo1 3s backwards 3s;
+    }
+
+    .Scopri{
+        animation: bottone 3s backwards 1s;
+    }
+
+    .Accedi{
+        animation: bottone2 3s backwards 2s;
+    }
+
+    .Contattaci{
+        animation: bottone3 3s backwards 3s;
+    }
+
+    @keyframes foto {
+        0% {
+            transform:translate(-150%, 0);
+        }
+    
+        100% {
+            transform: translateX(0);
+        }}
+
+        @keyframes bottone {
+            0% {
+                opacity: 0;
+                transform:translate(0%, -150%);
+            }
+        
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }}
+
+            @keyframes bottone2 {
+                0% {
+                    opacity: 0;
+                    transform:translate(150%, 0);
+                }
+            
+                100% {
+                    opacity: 1;
+                    transform: translateX(0);
+                }}
+
+                @keyframes bottone3 {
+                    0% {
+                        opacity: 0;
+                        transform:translate(0, 150%);
+                    }
+                
+                    100% {
+                        opacity: 1;
+                        transform: translateX(0);
+                    }}
+
+                    @keyframes testo {
+                        0% {
+                            opacity: 0;
+                            transform:translate(0, -100%);
+                        }
+                    
+                        100% {
+                            opacity: 1;
+                            transform: translateX(0);
+                        }}
+                    @keyframes testo1 {
+                        0% {
+                            opacity: 0;
+                            transform:translate(0, 100%);
+                        }
+                    
+                        100% {
+                            opacity: 1;
+                            transform: translateX(0);
+                        }}
+
+                        
+                    @keyframes bordo {
+                        0% {
+                            opacity: 0;
+                            transform:translate(0, -100%);
+                        }
+                    
+                        100% {
+                            opacity: 1;
+                            transform: translateX(0);
+                        }}

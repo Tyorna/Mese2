@@ -1,0 +1,30 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    border-bottom: 1px solid gray;
+    margin-bottom: 20px;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    box-sizing: border-box; //quando si da display flax bisogna ridare il comando border box.
+    z-index: 3;
+}
+
+
+.navbar a{
+    text-decoration: none;
+    color: black;
+    background-color: gray;
+    border-radius: 10px;
+    padding: 1rem 1rem;
+    margin: 0 1rem;
+    transition: all 0.4s linear 0.1s;
+    color: white;
+    
+    &:hover{
+        color: black;
+        background-color: darkorange;
+        transform: scale(1.1);
+    }
+  }

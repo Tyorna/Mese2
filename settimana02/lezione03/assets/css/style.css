@@ -1,0 +1,210 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  border-bottom: 1px solid gray;
+  margin-bottom: 20px;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  box-sizing: border-box;
+  z-index: 3;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+  background-color: gray;
+  border-radius: 10px;
+  padding: 1rem 1rem;
+  margin: 0 1rem;
+  transition: all 0.4s linear 0.1s;
+  color: white;
+}
+.navbar a:hover {
+  color: black;
+  background-color: darkorange;
+  transform: scale(1.1);
+}
+
+section.hero {
+  max-width: 60%;
+  margin-bottom: 20px;
+  margin-top: 200px;
+}
+section.hero .hero-Title {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+section.hero .hero-Title h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  animation: testo 3s backwards 2s;
+}
+section.hero .hero-Title h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  animation: testo 3s backwards 3s;
+}
+section.hero .hero-Preview {
+  display: flex;
+}
+section.hero .hero-Preview .hero-PreviewImage {
+  width: 60%;
+}
+section.hero .hero-Preview .hero-PreviewImage .hero-img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  animation: foto 3s backwards;
+}
+section.hero .hero-PreviewBtn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-right: 1px solid blue;
+  width: 40%;
+  z-index: 1;
+  animation: bordo 4s backwards 2s;
+}
+section.hero .hero-PreviewBtn button {
+  background-color: rgb(35, 18, 219);
+  padding: 1rem 1rem;
+  margin: 1rem;
+  color: white;
+  border-radius: 10px;
+  transition: all 0.5s linear 0.1s;
+  z-index: 1;
+}
+section.hero .hero-PreviewBtn button:hover {
+  background-color: aqua;
+  transform: scale(1.2);
+  color: black;
+  z-index: 1;
+}
+
+.hero-text {
+  animation: testo1 3s backwards 3s;
+}
+
+.Scopri {
+  animation: bottone 3s backwards 1s;
+}
+
+.Accedi {
+  animation: bottone2 3s backwards 2s;
+}
+
+.Contattaci {
+  animation: bottone3 3s backwards 3s;
+}
+
+@keyframes foto {
+  0% {
+    transform: translate(-150%, 0);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes bottone {
+  0% {
+    opacity: 0;
+    transform: translate(0%, -150%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes bottone2 {
+  0% {
+    opacity: 0;
+    transform: translate(150%, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes bottone3 {
+  0% {
+    opacity: 0;
+    transform: translate(0, 150%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes testo {
+  0% {
+    opacity: 0;
+    transform: translate(0, -100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes testo1 {
+  0% {
+    opacity: 0;
+    transform: translate(0, 100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes bordo {
+  0% {
+    opacity: 0;
+    transform: translate(0, -100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+aside {
+  display: flex;
+  justify-content: center;
+}
+aside .carousel {
+  width: 70%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  z-index: 3;
+}
+aside .carousel .carousel-img {
+  width: 20%;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 1s ease-in;
+}
+.carousel-image:hover {
+  transform: scale(1.2);
+}
+
+body, html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  background-color: white;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}/*# sourceMappingURL=style.css.map */

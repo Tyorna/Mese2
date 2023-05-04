@@ -1,0 +1,27 @@
+aside{
+    display:flex;
+    justify-content: center;
+   .carousel{
+      width: 70%;
+       background-color: white;
+       display: flex;
+       justify-content: space-between;
+       margin-bottom: 30px;
+       z-index: 3;
+
+
+     .carousel-img{
+     width:20%;
+      }
+
+}
+} 
+
+.carousel-image{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 1s ease-in;
+   &:hover{
+    transform: scale(1.2);
+   }}
