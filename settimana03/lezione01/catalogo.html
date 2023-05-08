@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <!--
+    Per sviluppare questa traccia, seguiamo questi step:
+
+Creare la classe Prodotto con le proprietà richieste.
+Creare la classe Catalogo con un array di oggetti Prodotto.
+Implementare i metodi nella classe Catalogo per aggiungere, rimuovere e cercare prodotti.
+Creare l'interfaccia utente HTML.
+Collegare l'interfaccia utente agli oggetti JavaScript.
+1) Iniziamo con la creazione delle classi Prodotto e Catalogo
+2) Dopo aver creato le classi Prodotto e Catalogo, creiamo l'interfaccia utente HTML.
+3) Infine, colleghiamo l'interfaccia utente agli oggetti JavaScript. (// Collegamento dell'interfaccia utente agli oggetti JavaScript
+const aggiungiForm = document.getElementById('aggiungiForm');
+const listaProdotti = document.getElementById('listaProdotti)
+
+In sintesi, n questo script:
+
+1. Selezioniamo gli elementi HTML del form e della lista dei prodotti.
+2. Creiamo un'istanza della classe `Catalogo` per memorizzare i prodotti.
+3. Aggiungiamo un listener per l'evento `submit` del form, in modo da creare un nuovo oggetto `Prodotto` e aggiungerlo al catalogo quando l'utente invia il form. 
+Dopodiché, aggiorniamo la lista dei prodotti e resettiamo il form.
+4. Creiamo una funzione `aggiornaListaProdotti()` che aggiorna il contenuto della lista dei prodotti in base ai prodotti presenti nel catalogo. 
+In questa funzione, iteriamo sui prodotti nel catalogo, creiamo un elemento `div` per ciascun prodotto e popoliamo il contenuto del `div` con le informazioni sul prodotto. 
+Inoltre, aggiungiamo un pulsante "Rimuovi" per rimuovere il prodotto dal catalogo e aggiornare la lista dei prodotti.
+
+-->
+
+  <h1>Catalogo Prodotti</h1>
+
+  <h2>Aggiungi Prodotto</h2>
+  <form id="aggiungiForm">
+    <label for="id">ID:</label>
+    <input type="text" id="id" required>
+    <br>
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" required>
+    <br>
+    <label for="descrizione">Descrizione:</label>
+    <input type="text" id="descrizione">
+    <br>
+    <label for="prezzo">Prezzo:</label>
+    <input type="number" id="prezzo" step="0.01" required>
+    <br>
+    <label for="quantita">Quantità:</label>
+    <input type="number" id="quantita" required>
+    <br>
+    <button type="submit">Aggiungi</button>
+  </form>
+
+  <input type="text" id="inputRicerca" placeholder="Inserisci ID prodotto">
+  <button id="bottoneRicerca">Cerca Prodotto</button>
+
+  <h2>Prodotti nel Catalogo</h2>
+  <div id="listaProdotti"></div>
+
+
+    <script src="assets/js/catalogo.js"></script>
+</body>
+</html>
