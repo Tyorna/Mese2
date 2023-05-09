@@ -53,17 +53,30 @@ btnRimuovi.addEventListener("click", function () {
 
 //timer in sessionStorage;
 
+/*window.addEventListener("load", function () {
+    if(sessionStorage.getItem("tempo")){ 
+        totalSeconds = sessionStorage.getItem("tempo")}
+        else{
+            totalSeconds = 0;}
+})*/
+
 var totalSeconds = 0;
-var newTime = 0;
 var minutes;
 var seconds;
 var total;
 var totale;
 
-setInterval(setTime, 1000);
+/*
+if(sessionStorage.getItem("tempo")){ 
+    totalSeconds = Number(sessionStorage.getItem("tempo"))}
+    else{
+        totalSeconds = 0;
+    }})*/
 
-function setTime() {
-  ++totalSeconds;
+setInterval(Time, 1000);
+
+function Time() {
+  totalSeconds++;
   seconds = min(totalSeconds % 60);
   minutes = min(parseInt(totalSeconds / 60));
   total = `${minutes}:${seconds}`;
