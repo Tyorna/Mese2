@@ -1,0 +1,15 @@
+h1{
+    background-color: aqua;
+}
+
+#p{
+    text-decoration: underline;
+}
+
+.off{
+    pointer-events: none;
+}
+
+.none{
+    display: none;
+}
