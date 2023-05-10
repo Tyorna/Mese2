@@ -37,15 +37,11 @@ function aggiungiCard (event){
    del.classList.add('bg-warning', 'ms-3', 'p-2');
    del.innerHTML= 'elimina prodotto';
    item.appendChild(del);
+   localStorage.setItem('libri', cartaSalvata);
 }
 
 function cancella(event) {
    event.target.parentElement.classList.add('d-none');
-}
-
-
-function memorizza(){
-    localStorage.setItem('libri', cartaSalvata);
 }
 
 /*window.addEventListener("load", function () {
