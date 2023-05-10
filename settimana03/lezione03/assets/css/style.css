@@ -1,0 +1,10 @@
+.spazio{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.img {
+    aspect-ratio: 1/1.5;
+    object-fit: cover;
+}
